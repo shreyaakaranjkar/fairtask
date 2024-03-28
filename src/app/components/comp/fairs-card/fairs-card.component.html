@@ -1,0 +1,18 @@
+
+            <div class="card text-center cardinfo my-4 "  [routerLink]="['/Fairs',fairdata.fairId]">
+                <div class="card-header" [routerLinkActive]="['active']">
+                   <h4 class="info text-white">
+                    {{fairdata.fairName}}
+                   </h4>
+
+                     <div class="bodyinfo">
+                     <p>
+                        Event Type : {{fairdata.type}}
+                    </p>
+                    <p>
+                        Date : {{fairdata.endDate |date}}
+                    </p>
+                    </div>
+                </div>
+            </div>
+        
